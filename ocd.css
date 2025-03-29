@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    background-color: #00BFFF;
+    font-family: Verdana, sans-serif;
+    color: #330000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Layout */
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #cca466;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Main Section Layout */
+.main {
+    display: flex; /* Enables two-column layout */
+}
+
+/* Navigation Menu (Left Column) */
+nav {
+    width: 25%;
+    background-color: #E8D882;
+    padding: 10px;
+}
+
+/* Navigation Links */
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #330000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Main Content (Right Column) */
+.content {
+    width: 75%;
+    background-color: #f1e8b0;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+}

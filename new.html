@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: fit-content;
+            border: 2px solid black;
+        }
+
+        /* Headers row */
+        .header-row {
+            display: flex;
+        }
+
+        .column-header {
+            width: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Content area */
+        .content {
+            display: flex;
+        }
+
+        /* Column 1 - Blue */
+        .col1 {
+            width: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        /* Right side container */
+        .right-side {
+            width: 200px;
+        }
+
+        /* Top row - B and C */
+        .top-row {
+            display: flex;
+        }
+
+        .col2 {
+            width: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .col3 {
+            width: 100px;
+            background-color: red;
+            border: 1px solid black;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Green section below B and C */
+        .green-section {
+            background-color: green;
+            border: 1px solid black;
+            color: white;
+            padding: 5px;
+        }
+
+        /* Lists styling */
+        .list {
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Headers Row -->
+        <div class="header-row">
+            <div class="column-header">Column 1</div>
+            <div class="column-header">Column 2</div>
+            <div class="column-header">Column 3</div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Column 1 - Blue -->
+            <div class="col1">
+                <p>A numbered list:</p>
+                <ol class="list">
+                    <li>Able</li>
+                    <li>Baker</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                </ol>
+            </div>
+
+            <!-- Right Side (Columns 2 & 3) -->
+            <div class="right-side">
+                <!-- Top Row - B and C -->
+                <div class="top-row">
+                    <div class="col2">B</div>
+                    <div class="col3">C</div>
+                </div>
+
+                <!-- Green Section spanning below B and C -->
+                <div class="green-section">
+                    <p>An unnumbered list:</p>
+                    <ul class="list">
+                        <li>Pounds</li>
+                        <li>Dollars</li>
+                        <li>Euro</li>
+                        <li>Yen</li>
+                        <li>Roubles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
